@@ -5,6 +5,7 @@
 
 using namespace std;
 
+/* 이분탐색 판별을 위한 값 */
 bool test(int mid,vector<int> stones, int k)
 {
     for(int cnt=0,i=0;i<stones.size();i++)
@@ -17,7 +18,7 @@ bool test(int mid,vector<int> stones, int k)
 
 int solution(vector<int> stones, int k) {
     int l_answer = 1;
-    int r_answer = 200000001;
+    int r_answer = 200000000;
     
     while(l_answer <= r_answer)
     {
